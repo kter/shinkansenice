@@ -7,7 +7,7 @@ var T = new Twit({
   timeout_ms: 60*1000,
 })
 
-var stream = T.stream('statuses/filter', { track: ['ｼﾝｶﾝｾﾝｽｺﾞｸｶﾀｲｱｲｽ', 'シンカンセンスゴクカタイアイス'] })
+var stream = T.stream('statuses/filter', { track: ['ｼﾝｶﾝｾﾝｽｺﾞｸｶﾀｲｱｲｽ', 'シンカンセンスゴクカタイアイス', 'ｼﾝｶﾝｾﾝｽｺﾞｲｶﾀｲｱｲｽ', 'シンカンセンスゴイカタイアイス'] })
 
 stream.on('tweet', function (tweet){
   var tweetId = tweet.id_str;
